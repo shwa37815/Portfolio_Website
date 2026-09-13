@@ -1,4 +1,4 @@
-# React + TypeScript 学習備忘録
+# *React + TypeScript 学習備忘録*
 
 1. ## プロジェクト構成とファイルの役割
 * **`.tsxとは`**
@@ -39,10 +39,10 @@
 
 ---
 
-2. ##  TypeScript / React の必須知識
+2. ##  TypeScript / React の知識
 
-## TypeScript
-###  アロー関数 (Arrow Function)
+## *TypeScript*
+###  *アロー関数 (Arrow Function)*
 -関数（処理のまとまり）を短くシンプルに書くための、現代の標準的な書き方。
 
 ```javascript
@@ -61,7 +61,7 @@ const hoge = () => {
   - Webページの中に別のWebページや動画、Googleマップなどの外部コンテンツを埋め込んで表示するためのHTML要素
 
 
-### GoogleFormとの連携
+#### GoogleFormとの連携
 
 お問い合わせの手段をGoogleFormを使って実装
 埋め込むことで、ページ遷移を省略した。
@@ -82,6 +82,39 @@ const googleFormUrl =...
   .
 >
 ```
+
+### DOM
+- WebページであるHTMLをJavascriptからツリー構造に変換したもの
+- 普段見ているWebページのHTMLをブラウザが読み込むとJavascriptから操作できるようにする
+-  この返信させた後の状態をDOMという
+
+### Flaticon
+
+#### HTML側の記述
+
+``` html
+<i className="fi fi-tr-portfolio"></i>
+```
+- fiは、これからFlaticonを表示するという基本の合図
+- trはアイコンの見た目やタイプを指定する
+- portfolio等は表示したい絵柄の名前
+
+#### 読み込んでいるアイコン種類
+- 1, uicons-thin-rounded
+  - 細く、角が丸い
+- 2, uicons-thin-straight
+  - 細く、角が四角い
+- 3, uidons-solid-straight
+  - 塗りつぶし、角が四角い
+
+#### アイコン関係で使われたタグについて
+- <meta>
+  -   ページの処理設定
+      文字化け防止のための文字コードを指定する役割
+
+- <meta name ...>
+  - スマホ表示の最適化（レスポンシブ対応）
+
 
 ## CLIツール開発 (Node.js + TypeScript) 初見コード備忘録
 

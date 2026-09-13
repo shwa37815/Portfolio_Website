@@ -38,7 +38,7 @@ const Header = () => {
           {/* Portfolio */}
           <li>
             <Link to="/portfolio" className="nav-link" style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', fontSize: '2.0rem' }}>
-              <i className="fi fi-ts-comet"></i>
+              <i className="fi fi-ts-portfolio"></i>
             </Link>
           </li>
 
