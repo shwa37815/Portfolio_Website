@@ -1,6 +1,10 @@
 import { Link } from 'react-router-dom';
 import "./Header.css";
 
+// 📍 相対パスを ../ から ../../ に修正
+import githubIcon from '../../assets/GitHub_Invertocat_Black.png';
+import qiitaIcon from '../../assets/qiita-icon.png'; 
+
 const Header = () => {
   return (
     <header
@@ -37,22 +41,37 @@ const Header = () => {
 
           {/* Portfolio */}
           <li>
-            <Link to="/portfolio" className="nav-link" style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', fontSize: '2.0rem' }}>
-              <i className="fi fi-ts-portfolio"></i>
+            <Link to="/portfolio" className="nav-link" style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}>
+              <img 
+                src={githubIcon} 
+                alt="GitHub" 
+                style={{ 
+                  width: '2.0rem', 
+                  height: '2.0rem', 
+                  objectFit: 'contain' 
+                }} 
+              />
             </Link>
           </li>
 
           {/* Memo */}
           <li>
-            <Link to="/memo" className="nav-link" style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', fontSize: '2.0rem' }}>
-              <i className="fi fi-ts-ballot"></i>
+            <Link to="/memo" className="nav-link" style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}>
+              <img 
+                src={qiitaIcon} 
+                alt="Qiita" 
+                style={{ 
+                  width: '2.0rem', 
+                  height: '2.0rem', 
+                  objectFit: 'contain' 
+                }} 
+              />
             </Link>
           </li>
 
           {/* Contact */}
           <li>
             <Link to="/contact" className="nav-link" style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', fontSize: '2.0rem' }}>
-              {/* tr (thin rounded) ではなく ts (thin straight) に統一して表示を安定させます */}
               <i className="fi fi-ts-handshake"></i>
             </Link>
           </li>
