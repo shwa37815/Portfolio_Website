@@ -4,7 +4,6 @@ const Portfolio = () => {
             <h2>ポートフォリオ一覧</h2>
             <p style={{ fontSize: '1.2em', color: '#666' }}>制作したアプリやツールの一覧です。</p>
             
-            {/* ▼ ここから作品リスト（カードを横並びにする設定） ▼ */}
             <div style={{ 
                 display: 'flex', 
                 justifyContent: 'center', 
@@ -13,7 +12,6 @@ const Portfolio = () => {
                 marginTop: '30px' 
             }}>
                 
-                {/* --- 1つ目の作品カード：日報自動作成ツール --- */}
                 <div style={{
                     border: '1px solid #ddd',
                     borderRadius: '8px',
@@ -44,8 +42,6 @@ const Portfolio = () => {
                         GitHubでコードを見る →
                     </a>
                 </div>
-                {/* --- ここまで 1つ目の作品 --- */}
-
             </div>
         </div>
     );
