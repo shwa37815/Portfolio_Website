@@ -3,7 +3,7 @@ import memoText from '../../assets/memo.md?raw';
 import functionText from '../../assets/関数.md?raw';
 import designText from '../../assets/設計.md?raw';
 import { useState } from 'react';
-import { redirect } from 'react-router-dom';
+
 
 const memoList = [
   {id: 'memo', title: '備忘録', content: memoText },
@@ -17,7 +17,7 @@ const Memo = () => {
   return (
     <div style= {{ maxWidth: '800px', margin: '0 auto',textAlign: 'left', padding: '40px 20px', backgroundColor: '#f5f5f5', borderRadius: '8px', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)', }}>
       <h2>学習備忘録</h2>
-      <p style={{fontSize:`20px`,color:`red`,Weigt:`bold`}}>Qiitaサイトの記事に変更予定</p>
+      <p style={{fontSize:`20px`,color:`red`}}>Qiitaサイトの記事に変更予定</p>
 
       <div style={{ display: 'flex', gap: '10px', marginBottom: '20px',}}>
         {memoList.map((memo) => (
