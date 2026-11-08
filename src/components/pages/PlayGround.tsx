@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import type { Table } from '../parts/db_type'; 
 
 const DBLearningPage: React.FC = () => {
-  const [tables, setTables] = useState<Table[]>([
+  const [tables] = useState<Table[]>([
     {
       id: 'table-1',
       name: 'users',
@@ -15,8 +15,6 @@ const DBLearningPage: React.FC = () => {
   ]);
 
   return (
-    // ★ 修正ポイント: textColor ではなく color を使う
-    // 一番外側に設定しておけば、中のテキスト全てにこの色が基本適用されます
     <div style={{ padding: '24px', color: '#1a6c77' }}>
       <h1>ノーコードDB学習グラウンド</h1>
       
@@ -25,11 +23,11 @@ const DBLearningPage: React.FC = () => {
           <div 
             key={table.id} 
             style={{ 
-              border: '1px solid #1a6c77', // 枠線の色も合わせると綺麗です
+              border: '1px solid #1a6c77', 
               borderRadius: '8px', 
               padding: '16px',
               width: '250px',
-              boxShadow: '0 2px 4px rgba(26,108,119,0.2)' // 影の色も少し調整
+              boxShadow: '0 2px 4px rgba(26,108,119,0.2)' 
             }}
           >
             <h2 style={{ marginTop: 0, fontSize: '18px' }}>{table.name}</h2>
@@ -47,10 +45,9 @@ const DBLearningPage: React.FC = () => {
                   }}
                 >
                   <span style={{ fontWeight: 'bold' }}>{col.name}</span>
-                  {/* ★ 修正ポイント: 大文字の Color ではなく小文字の color */}
                   <span style={{ 
                     fontSize: '12px', 
-                   // color: '#fff', // 背景が濃い場合は文字を白などにすると見やすいです
+                    //color: '#fff',
                     //backgroundColor: '#1a6c77', 
                     padding: '2px 6px', 
                     borderRadius: '4px' 
