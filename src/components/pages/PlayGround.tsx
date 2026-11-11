@@ -17,12 +17,6 @@ const DBLearningPage: React.FC = () => {
 
     if (!droppedType) return;
 
-    const newColumn = {
-      id: crypto.randomUUID(),
-      name: `new-${droppedType}`,
-      type: droppedType
-    };
-
     addColumn(tableId, droppedType);
   };
 
