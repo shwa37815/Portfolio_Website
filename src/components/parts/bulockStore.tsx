@@ -1,4 +1,3 @@
-import React from 'react';
 import type {ColumnType} from '../../db_type';
 import { Block } from './block';
 
