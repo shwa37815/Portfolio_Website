@@ -38,8 +38,8 @@ body::before {
 
   background-size: 200% 200%;
   
-  filter ; blur (35px);
-  animation ; auraGradient 6s ease-in-out infinite alternate;
+  filter : blur(35px);
+  animation : auraGradient 6s ease-in-out infinite alternate;
 }
 
 @keyframes auraGradient {
