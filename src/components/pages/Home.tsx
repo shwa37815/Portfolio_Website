@@ -42,6 +42,15 @@ const timelineData: TimelineItem[] = [
     description: 'Skillsページの削除を行い、代わりにPlaygroundページを追加。ページ全体の背景にグラデーション機能を導入し、デザインに刷新。',
     tags: ['React', 'TypeScript', 'CSS'],
   },
+
+  {
+    id: 5,
+    date: '2026.10',
+    title: 'アイコンの変更',
+    category: 'Feature/icon_and_memopage', 
+    description: 'メモをqiitaへ。それに伴い、Githubのページアイコンとメモのページアイコンをそれぞれ公式の画像へ差し替え',
+    tags: ['React', 'TypeScript', 'CSS'],
+  },
 ];
 
 // カーソル位置を追尾して光らせるタイムラインカード

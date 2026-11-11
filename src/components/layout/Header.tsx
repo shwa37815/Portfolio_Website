@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import "./Header.css";
 
-// 📍 相対パスを ../ から ../../ に修正
+// 相対パスを ../ から ../../ に修正
 import githubIcon from '../../assets/GitHub_Invertocat_Black.png';
 import qiitaIcon from '../../assets/qiita-icon.png'; 
 
