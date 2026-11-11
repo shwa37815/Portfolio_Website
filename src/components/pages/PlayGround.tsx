@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import type { Table, ColumnType } from '../../db_type'; 
+import type { ColumnType } from '../../db_type'; 
 import { AddTableButton } from './../parts/button';
 import { BlockStore } from './../parts/bulockStore';
 import {useDB} from '../../hooks/useDB';
