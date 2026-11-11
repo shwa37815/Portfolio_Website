@@ -1,4 +1,3 @@
-import React from 'react';
 import {useState} from 'react';
 import type { Table, ColumnType } from '../db_type';
 
